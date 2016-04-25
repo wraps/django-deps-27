@@ -15,5 +15,5 @@ WORKDIR /home/proj
 RUN mkdir -p /home/proj/.virtualenvs/ \
     && pip install -U pip virtualenv \
     && virtualenv /home/proj/.virtualenvs/proj \
-    && . /home/proj/.virtualenvs/proj/bin/activate \
+    && . /home/proj/.virtualenvs/proj/bin/activate
 ENV PATH /home/proj/.virtualenvs/proj/bin:$PATH
